@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "separatefov",
+  "version": "${version}",
+  "name": "Separate FOV",
+  "description": "Use a different field of view in first person and third person.",
+  "authors": ["Mew2X"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.separatefov.SeparateFovClient"
+    ],
+    "modmenu": [
+      "com.example.separatefov.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "separatefov.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
